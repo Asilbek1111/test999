@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pin</title>
+    <link rel="stylesheet" href="../Login/style.css" />
+  </head>
+  <body>
+    <section>
+      <p>Enter your PIN</p>
+      <input id="demo" type="text" placeholder="Enter PIN" />
+    </section>
+    <main>
+      <button onclick="getElementById('demo').value += 1">1</button>
+      <button onclick="getElementById('demo').value += 2">2</button>
+      <button onclick="getElementById('demo').value += 3">3</button>
+      <button onclick="getElementById('demo').value += 4">4</button>
+      <button onclick="getElementById('demo').value += 5">5</button>
+      <button onclick="getElementById('demo').value += 6">6</button>
+      <button onclick="getElementById('demo').value += 7">7</button>
+      <button onclick="getElementById('demo').value += 8">8</button>
+      <button onclick="getElementById('demo').value += 9">9</button>
+      <button class="unchanged" onclick="enter()">Enter</button>
+      <button onclick="getElementById('demo').value += 0">0</button>
+      <button class="unchanged" onclick="deleteNum()">Delet</button>
+    </main>
+
+    <script>
+      function deleteNum() {
+        var myInput = document.getElementById("demo");
+        myInput.value = myInput.value.substring(0, myInput.value.length - 1);
+      }
+
+      function enter() {
+        var myInput = document.getElementById("demo").value - 0;
+        if (myInput === 1234) {
+          window.location.href = "../Main/main.html";
+        } else {
+          alert("Please enter valid PIN");
+        }
+      }
+    </script>
+  </body>
+</html>

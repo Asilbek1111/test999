@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Widthdraw</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Enter the amount widthdraw</h2>
+    <section>
+      <div class="container">
+        <div class="first">
+          <button onclick="getElementById('sum').valueAsNumber += 20">
+            20
+          </button>
+          <button onclick="getElementById('sum').valueAsNumber += 40">
+            40
+          </button>
+          <button onclick="(getElementById('sum').valueAsNumber) += 60">
+            60
+          </button>
+          <button onclick="(getElementById('sum').valueAsNumber) += 80">
+            80
+          </button>
+        </div>
+
+        <div class="second">
+          <img
+            onclick="getElementById('sum').valueAsNumber += 100"
+            src="../../Assets/100.jpg"
+            alt=""
+          />
+          <img
+            onclick="getElementById('sum').valueAsNumber += 20"
+            src="../../Assets/20.jpg"
+            alt=""
+          />
+          <input
+            type="number"
+            (focusout)="(modifiedVal = +modifiedVal)"
+            value="modifiedVal"
+            id="sum"
+          />
+          <img
+            onclick="getElementById('sum').value -= 20"
+            src="../../Assets/20d.jpg"
+            alt=""
+          />
+          <img
+            onclick="getElementById('sum').value -= 100"
+            src="../../Assets/100d.jpg"
+            alt=""
+          />
+          <button
+            id="enter"
+            class="btn btn-success"
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Enter
+          </button>
+          <button id="back" class="btn btn-danger">Back</button>
+        </div>
+
+        <div class="third">
+          <button onclick="getElementById('sum').valueAsNumber  += 100">
+            100
+          </button>
+          <button onclick="getElementById('sum').valueAsNumber  += 200">
+            200
+          </button>
+          <button onclick="getElementById('sum').valueAsNumber  += 300">
+            300
+          </button>
+          <button id="btn">Back</button>
+        </div>
+      </div>
+    </section>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Are you sure to Widthdraw?
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h4 id="loading">Widthdrawing...</h4>
+            <div class="alert alert-success" role="alert">
+              <h4>Success!</h4>
+              <p>Money has been widthdrawed.</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              NO
+            </button>
+            <button class="yes btn btn-success">YES</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

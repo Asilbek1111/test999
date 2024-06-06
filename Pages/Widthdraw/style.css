@@ -1,0 +1,46 @@
+section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  margin: 1rem;
+}
+
+.first,
+.second,
+.third {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 25px;
+}
+
+img {
+  width: 100px;
+}
+
+#enter {
+  position: absolute;
+  right: 20%;
+  font-size: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#back {
+  position: absolute;
+  right: 20%;
+  bottom: 43%;
+  font-size: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deposit</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <p>Enter the amount to deposit</p>
+      <input id="demo" type="number" placeholder="Enter Amount" />
+    </section>
+    <main>
+      <button onclick="getElementById('demo').value += 1">1</button>
+      <button onclick="getElementById('demo').value += 2">2</button>
+      <button onclick="getElementById('demo').value += 3">3</button>
+      <button onclick="getElementById('demo').value += 4">4</button>
+      <button onclick="getElementById('demo').value += 5">5</button>
+      <button onclick="getElementById('demo').value += 6">6</button>
+      <button onclick="getElementById('demo').value += 7">7</button>
+      <button onclick="getElementById('demo').value += 8">8</button>
+      <button onclick="getElementById('demo').value += 9">9</button>
+      <button onclick="getElementById('demo').value += 0">0</button>
+      <button onclick="getElementById('demo').value += '.'">.</button>
+      <button class="delete">Del</button>
+      <button
+        class="Enter"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        id="btn"
+      >
+        Enter
+      </button>
+      <button class="Enter btn btn-danger" id="back">Back</button>
+    </main>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Are you sure to Deposit?
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h4 id="loading">Depositing...</h4>
+            <div class="alert alert-success" role="alert">
+              <h4>Success!</h4>
+              <p>Money has been deposited.</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              NO
+            </button>
+            <button class="yes btn btn-success">YES</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.container button {
+  padding: 10px;
+  font-size: 21px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.container button:hover {
+  background-color: rgb(128, 128, 243);
+}
+
+.return {
+  color: white;
+  background: red;
+  padding: 5px;
+  font-size: 20px;
+  position: absolute;
+  left: 60%;
+  margin-top: 2rem;
+  border-radius: 5px;
+}
+
+.return:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}

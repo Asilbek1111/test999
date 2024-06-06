@@ -1,0 +1,15 @@
+section h1 {
+  text-align: center;
+  margin: 1rem;
+}
+
+#btn {
+  position: absolute;
+  right: 5%;
+  margin-top: 16px;
+}
+
+#overallh2 {
+  text-align: center;
+  margin: 1rem;
+}
